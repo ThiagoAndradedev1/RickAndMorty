@@ -22,8 +22,6 @@ const SingleCharacter = ({ match }) => {
     location,
   } = character;
 
-  console.log(character);
-
   if (loading) return <Spinner />;
 
   // return <Fragment>{origin && <h1>{origin.name}</h1>}</Fragment>;
