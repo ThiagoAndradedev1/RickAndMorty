@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Rick and Morty Projeto!</h1>
     </div>
   );
 };

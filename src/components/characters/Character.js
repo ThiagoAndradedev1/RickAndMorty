@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, Fragment } from 'react';
 import CharactersItems from './CharactersItems';
 import RickandMContext from '../../context/rickandmorty/RickandMContext';
 import Spinner from '../layout/Spinner';
@@ -11,11 +11,13 @@ const Character = () => {
     return <Spinner />;
   } else {
     return (
-      <div style={userStyle}>
-        {characters.map((character) => (
-          <CharactersItems key={character.id} character={character} />
-        ))}
-      </div>
+      <Fragment>
+        <div className='grid-3'>
+          {characters.map((character) => {
+            return <CharactersItems key={character.id} character={character} />;
+          })}
+        </div>
+      </Fragment>
     );
   }
 };
