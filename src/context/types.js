@@ -1,0 +1,6 @@
+export const SEARCH_CHARACTERS = 'SEARCH_CHARACTERS';
+export const SINGLE_CHARACTER = 'SINGLE_CHARACTER';
+export const CLEAR_USERS = 'CLEAR-USERS';
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+export const SET_LOADING = 'SET_LOADING';
